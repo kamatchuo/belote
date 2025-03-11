@@ -107,3 +107,7 @@ button:hover {
         width: 100%;
     }
 }
+input {
+    font-size: 16px; /* Empêche le zoom automatique sur mobile */
+}
+
