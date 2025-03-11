@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belote - Tableau des Scores</title>
+    <link rel="stylesheet" href="belote.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🃏 Belote - Scores 🃏</h1>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Round</th>
+                        <th>Équipe 1</th>
+                        <th>Équipe 2</th>
+                    </tr>
+                </thead>
+                <tbody id="scoreTable">
+                    <!-- Les scores seront ajoutés ici dynamiquement -->
+                </tbody>
+                <tfoot>
+                    <tr class="total-row">
+                        <td><strong>Total</strong></td>
+                        <td id="totalEquipe1">0</td>
+                        <td id="totalEquipe2">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="score-input">
+            <input type="number" id="scoreEquipe1" placeholder="Score Équipe 1" min="0">
+            <input type="number" id="scoreEquipe2" placeholder="Score Équipe 2" min="0">
+            <button onclick="ajouterScore()">Ajouter Score</button>
+            <button onclick="resetScores()" class="reset">🔄 Réinitialiser</button>
+        </div>
+
+        <h2 id="winnerMessage"></h2>
+    </div>
+
+    <script src="belote.js"></script>
+</body>
+</html>
