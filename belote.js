@@ -9,11 +9,15 @@ function modifierScoreFinal() {
     if (!isNaN(nouveauScore) && nouveauScore >= 100) {
         scoreFinal = nouveauScore;
         afficherPointsRestants();
-      
+        
+        // Met à jour l'affichage du score final dans l'input
+        document.getElementById("scoreFinal").value = scoreFinal;
+
     } else {
         alert("Veuillez entrer un score valide (minimum 100).");
     }
 }
+
 
 function ajouterScore() {
     let score1 = parseInt(document.getElementById("scoreEquipe1").value) || 0;
