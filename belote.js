@@ -9,7 +9,7 @@ function modifierScoreFinal() {
     if (!isNaN(nouveauScore) && nouveauScore >= 100) {
         scoreFinal = nouveauScore;
         afficherPointsRestants();
-        alert(`Le score final a été mis à jour à ${scoreFinal} points.`);
+      
     } else {
         alert("Veuillez entrer un score valide (minimum 100).");
     }
